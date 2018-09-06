@@ -7,3 +7,12 @@
  Template:     talon
  Version:      1.0.0
 */
+
+
+/* page navigation */
+.main-navigation a {
+  text-transform: none;
+}
+.astm-search-menu .search-form {
+  border: solid 3px red;
+}
