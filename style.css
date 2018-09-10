@@ -4,10 +4,12 @@
    WordPress theme for YWCA Idaho
  Author:       Casey Blamires
  Author URI: http://clblamires.github.io
- Template:     talon
+ Template:     givingpress-lite
  Version:      1.0.0
 */
 
+
+/* ************************************************************************ */
 /* 
 YWCA Brand Colors 
 Orange: #fd5a1e
@@ -16,56 +18,84 @@ White: white
 Gray: #ccc
 */
 
-
-
-/* page navigation */
-.main-navigation a {
-  text-transform: none;
-}
-.main-navigation ul ul li {
-  background: black;
-}
-
-.byline, .cat-links, .meta-dash {
-  display: none !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #fd5a1c;
-}
-
-/* remove the shadows around things that I don't like */
-.hentry, .widget-area .widget, .main-header {
-  box-shadow: none !important;
-}
-.hentry {
-  padding: 20px 30px;
-}
-.widget-area .widget {
-  margin-bottom: 0;
-  padding: 20px 30px;
-}
-
-/* remove the extra huge margin between the header and .site-content */
-.site-content {
-  margin: 0;
-}
-
-/* Quick Espace */
-.menu-item-1328 a {
-  font-style: italic;
-  color: #fd5a1c !important;
-}
-.menu-item-1328 a:after{
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: " \f2f5";
+/* ************************************************************************ */
+/* Typography */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+       url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
-
-/* body copy */
-blockquote {
-  border-left: 5px solid #fd5a1c;
-  padding: 15px;
-  background: none;
-  font-style: italic;
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+       url('fonts/sourcesanspro-semibold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Arial Black';
+  src: url('fonts/arialblack.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, blockquote, #masthead .site-description, #navigation, #navigation .instruction, #author, #email, #url, #comment, table, form textarea , select{
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+  font-family: Arial Black;
+}
+
+h2, h3, h4, h5, h6, .site-title, .widget-title, button, .button, a.button, a:link.button, a:visited.button,
+a.more-link, a:link.more-link, a:visited.more-link,
+.container .reply a, #searchsubmit, #prevLink a, #nextLink a,
+input#submit, input[type='submit'] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+/* ************************************************************************ */
+/* NAVIGATION */
+#navigation{
+  font-size: 1rem;
+  /* color: black; */
+}
+.menu a, .menu a:link, .menu a:visited {
+  color: black;
+}
+.menu-toggle, .mobile-menu a {
+  color: black !important;
+}
+.sf-arrows .sf-with-ul:after {
+  border-top-color: #fd5a1e;
+}
+
+/* ************************************************************************ */
+/* Address Bar on top */
+.contact-address, .contact-email .link-email, .contact-phone {
+  color: black;
+}
+.contact-address i, .contact-email i, .contact-phone i {
+  color: #fd5a1e !important;
+}
+
+/* ************************************************************************ */
+/* Pages and Body */
+p {
+  line-height: 200%;
+}
+
+.postarea.full {
+  padding: 18px 0;
+}
+
+/* ************************************************************************ */
+/* Sidebars */
+
