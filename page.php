@@ -2,6 +2,8 @@
 /**
  * This template displays the default page content.
  *
+ * @package GivingPress Lite
+ * @since GivingPress Lite 1.0
  */
 
 get_header(); ?>
@@ -24,18 +26,10 @@ get_header(); ?>
 		<!-- BEGIN .content -->
 		<div class="content">
 
-        <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
-        
-            <!-- BEGIN .five columns -->
-			<div class="five columns">
-
-            <?php get_sidebar(); ?>
-
-            <!-- END .five columns -->
-            </div>
+		<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
 
 			<!-- BEGIN .eleven columns -->
-			<div class="eleven columns">
+			<div class="twelve columns">
 
 				<!-- BEGIN .postarea -->
 				<div class="postarea">
@@ -48,7 +42,13 @@ get_header(); ?>
 			<!-- END .eleven columns -->
 			</div>
 
-			
+			<!-- BEGIN .five columns -->
+			<div class="four columns">
+
+				<?php get_sidebar(); ?>
+
+			<!-- END .five columns -->
+			</div>
 
 		<?php } else { ?>
 
