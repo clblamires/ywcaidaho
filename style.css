@@ -49,22 +49,26 @@ body, blockquote, #masthead .site-description, #navigation, #navigation .instruc
 
 
 h1 {
-  font-family: Arial Black;
+  font-family: "Arial Black";
 }
 
-h2, h3, h4, h5, h6, .site-title, .widget-title, button, .button, a.button, a:link.button, a:visited.button,
+h1, h2, h3, h4, h5, h6, .site-title, .widget-title, button, .button, a.button, a:link.button, a:visited.button,
 a.more-link, a:link.more-link, a:visited.more-link,
 .container .reply a, #searchsubmit, #prevLink a, #nextLink a,
 input#submit, input[type='submit'] {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial Black" , Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fd5a1e;
 }
 
 
 /* ************************************************************************ */
 /* NAVIGATION */
 #navigation{
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* color: black; */
 }
 .menu a, .menu a:link, .menu a:visited {
@@ -98,4 +102,26 @@ p {
 
 /* ************************************************************************ */
 /* Sidebars */
+.sidebar {
+  background: none;
+  padding: 0;
+  font-size: 1.14em;
+}
+.sidebar ul.menu a {
+  color: black !important;
+  display: inline-block;
+}
 
+.sidebar ul.menu li {
+  background: white !important;
+}
+.widget ul.menu a {
+  display: inline-block !important;
+}
+.sidebar ul.menu li:before {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  margin-right: 20px;
+  display: inline-block;
+  color: #fd5a1e;
+}
