@@ -4,7 +4,7 @@
    WordPress theme for YWCA Idaho
  Author:       Casey Blamires
  Author URI: http://clblamires.github.io
- Template:     givingpress-lite
+ Template:     charitas-lite
  Version:      1.0.0
 */
 
@@ -60,143 +60,112 @@ input#submit, input[type='submit'] {
   font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 { font-size: 2.75rem; }
+h2 { font-size: 2.5rem; }
+
+.widget-title h3 {
   color: #fd5a1e;
 }
 
+p {
+  font-size: 1.3em;
+  line-height: 165%;
+}
 
 /* ************************************************************************ */
-/* NAVIGATION */
-#navigation{
-  font-size: 0.9rem;
+/* Helper Classes */
+.ywca-orange { color: #fd5a1e; }
+.text-center { text-align: center; }
+
+
+/* ************************************************************************ */
+/* Header */
+#site-title a img {
+  max-width: 230px;
 }
-.menu a, .menu a:link, .menu a:visited {
-  color: black;
+#sticky_navigation {
+  position: relative !important;
 }
-.menu-toggle, .mobile-menu a {
-  color: black !important;
+.nav-menu li a {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
-.sf-arrows .sf-with-ul:after {
-  border-top-color: #fd5a1e;
-}
-#menu-item-1328 {
+#menu-item-1328, #toolbar .tb-list .donate a {
   background: #fd5a1e;
-  padding: 0 12px 0 10px;
+}
+#toolbar .tb-list .donate a {
+  font-size: 12px;
 }
 #menu-item-1328 a {
-  color: white !important;
-  font-weight: bold;
-  font-style: italic;
+  color: white;
+}
+
+#main .inner {
+  padding: 40px 0;
+}
+#rootline {
+  font-size: 1.4em;
 }
 
 /* ************************************************************************ */
-/* Address Bar on top */
-.contact-address, .contact-email .link-email, .contact-phone {
-  color: black;
+/* Home Page */
+.wplp_container.default .title {
+  /* font-size: 1em !impo /rtant; */
 }
-.contact-address i, .contact-email i, .contact-phone i {
-  color: #fd5a1e !important;
-  
-}
-
-/* ************************************************************************ */
-/* Pages and Body Copy */
-p {
-  line-height: 200%;
-}
-
-blockquote {
-  font-size: 1.1em;
-  border-left: solid 3px #fd5a1e;
-}
-
-.postarea.full {
-  padding: 18px 0;
-}
-
-a, a:link, a:visited {
-  color: #fd5a1e;
-}
-
-/* ************************************************************************ */
-/* Sidebars */
-.sidebar {
-  background: none;
-  padding: 0;
-  font-size: 1.14em;
-}
-.sidebar ul.menu a {
-  color: black !important;
-  display: inline-block;
-}
-
-.sidebar ul.menu li {
-  background: white !important;
-}
-.widget ul.menu a {
-  display: inline-block !important;
-}
-.sidebar ul.menu li:before {
-  font-family: 'FontAwesome';
-  content: '\f105';
-  margin-right: 20px;
-  display: inline-block;
-  color: #fd5a1e;
+.insideframe {
+  font-size: 1rem;
 }
 
 
 /* ************************************************************************ */
-/* Donations */
-#razoo_donation_widget {
+/* Sidebar */
+.widget_recent_entries {
+  font-size: 1.2em;
+}
+
+
+/* ************************************************************************ */
+/* Employees */
+.employee .entry-meta-press {
+  display: none;
+}
+.employee a {
+  text-decoration: none;
+}
+.employee a:hover {
+  text-decoration: underline;
+}
+
+.employees_list ul {
+  list-style: none;
+  margin: 0;
+}
+.employees_list li {
+  padding: 1em;
+  font-size: 1.3em;
+}
+.employees_list li:nth-child(even) {
+  background: #fafafa;
+}
+
+/* ************************************************************************ */
+/* Jobs */
+table.jobs td {
+  width: 33.33333%;
+  font-size: 1.2em;
+}
+
+/* ************************************************************************ */
+/* Donation widget */
+#razoo_donation_widget{
   text-align: center;
 }
-#donation-widget-legacy-wrapper .meta .toggler {
-  display: none !important;
-}
 
 
 /* ************************************************************************ */
-/* Employment */
-.search_jobs {
-  display: none;
-}
-.job_listings {
-  border-top: none;
-}
-.job_listings .company_logo {
-  display: none;
-}
-.job_listings .position {
-  padding: 0 !important;
-}
-.job_listings .date {
-  font-size: 0.78em;
-}
-.job_filters .job_types{
+/* Plugin "fixes" */
+.sfsi_footerLnk {
   display: none;
 }
 
-/* ************************************************************************ */
-/* Tables */
-.use_your_voice {
-  width: 100%;
-  border: none;
-  background: none;
-}
-.use_your_voice td {
-  width: 50%;
-  border: none;
-}
 
-.sexual_assault {
-  border: none;
-  background: none;
-}
-.sexual_assault td {
-  border: none;
-  vertical-align: top;
-}
-.sexual_assault td:first-child {
-  width: 25%;
-  font-weight: bold;
-}
