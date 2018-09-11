@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5, h6 {
 /* NAVIGATION */
 #navigation{
   font-size: 0.9rem;
-  /* color: black; */
 }
 .menu a, .menu a:link, .menu a:visited {
   color: black;
@@ -187,4 +186,17 @@ a, a:link, a:visited {
 .use_your_voice td {
   width: 50%;
   border: none;
+}
+
+.sexual_assault {
+  border: none;
+  background: none;
+}
+.sexual_assault td {
+  border: none;
+  vertical-align: top;
+}
+.sexual_assault td:first-child {
+  width: 25%;
+  font-weight: bold;
 }
