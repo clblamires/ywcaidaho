@@ -90,6 +90,11 @@ p {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+.nav-menu .sub-menu ul, .nav-menu .children ul {
+  left: 125px;
+}
+
+
 #menu-item-1328, #toolbar .tb-list .donate a {
   background: #fd5a1e;
 }
@@ -103,8 +108,30 @@ p {
 #main .inner {
   padding: 40px 0;
 }
-#rootline {
-  font-size: 1.4em;
+.mean-container .mean-nav ul li li li a {
+  font-size: .8em;
+}
+
+.page-title {
+  border: none;
+}
+.teaser-page-list .page-title{
+  margin: 10px 0;
+}
+.teaser-page-list #rootline {
+  margin-top: 30px;
+}
+.teaser-page-list {
+  min-height: auto;
+}
+h1 {
+  font-size: 2.5em;
+}
+
+/* ************************************************************************ */
+/* footer */
+.designby a, .designby a:visited {
+  color: white !important;
 }
 
 /* ************************************************************************ */
@@ -115,12 +142,20 @@ p {
 .insideframe {
   font-size: 1rem;
 }
+li {
+  font-size: 1.25em;
+}
 
 
 /* ************************************************************************ */
 /* Sidebar */
 .widget_recent_entries {
   font-size: 1.2em;
+}
+
+#s {
+  width: 70%;
+  border: solid 1px rgb(238,238,238);
 }
 
 
@@ -161,6 +196,53 @@ table.jobs td {
   text-align: center;
 }
 
+/* ************************************************************************ */
+/* Connect */
+.contact_address h5 {
+  font-size: 1em;
+  background: none !important;
+}
+.connect_table { 
+  overflow-x: auto;
+}
+.connect_main_address{
+  font-size: 2em;
+}
+
+.address_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.address_box > div {
+  width: 100%;
+  margin: 10px;
+}
+@media (max-width: 480px){
+  .address_box {
+    flex-wrap: wrap;
+  }
+}
+.wpforms-submit  {
+  background: #fd5a1e !important;
+  color: white !important;
+  border: none !important;
+  font-size: .8em !important;
+}
+
+/* ************************************************************************ */
+/* Events (specifically the DSVA conference page */
+.event_registration {
+  border: solid 1px rgb(238,238,238);
+  padding: 1.25em;
+}
+
+/* ************************************************************************ */
+/* blog page */
+.entry-meta {
+  clear:both;
+}
 
 /* ************************************************************************ */
 /* Plugin "fixes" */
